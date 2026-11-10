@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="" style="background-color: silver;">
+    <!-- #DDE3E8  ice silver-->
+    <!-- #EAAA00 mari gold-->
+
+    <div>
+        <div id="nodge" class="flex text-center p-3 bg-black text-white  justify-around">
+            <p class="">Sign Up and <b>Get 20% OFF</b> for your first Order</p>
+            <!-- <span class="close hover:text-red-600 cursor-pointer">X</span> -->
+
+        </div>
+
+        <!-- section 1 -->
+
+        <div class="flex justify-between p-5 site-header">
+            <h1 class="font-bold text-2xl">Dhakshaa's Collection</h1>
+            <ul class="gap-10 hidden md:flex">
+                <a href="index.html">
+                    <li class="hover:text-yellow-200">Home</li>
+                </a>
+                <a href="#NewArrival">
+                    <li class="hover:text-yellow-200">New Arrival</li>
+                </a>
+                <a href="#most-wanted">
+                    <li class="hover:text-yellow-200">Most Wanted</li>
+                </a>
+                <a href="collection.html">
+                    <li class="hover:text-yellow-200">Collections</li>
+                </a>
+                <a href="contact.html">
+                    <li class="hover:text-yellow-200">Contact Us</li>
+                </a>
+            </ul>
+
+            <svg id="menubox" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-6 cursor-pointer md:hidden" role="button" tabindex="0"
+                aria-label="Open navigation menu" aria-expanded="false">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+        </div>
+
+        <div id="sideebar" class="bg-gray-200 fixed z-20  top-0 transition-all duration-500"
+            style="width: 50%; height: 100vh; left: -50%;">
+
+            <div class="text-right p-5">
+                <p id="closebar" class="inline cursor-pointer">X</p>
+            </div>
+            <ul class="flex flex-col gap-10 items-center text-gray-600">
+                <a href="index.html">
+                    <li class="hover:text-yellow-200">Home</li>
+                </a>
+                <a href="#NewArrival">
+                    <li class="hover:text-yellow-200">New Arrival</li>
+                </a>
+                <a href="#most-wanted">
+                    <li class="hover:text-yellow-200">Most Wanted</li>
+                </a>
+                <a href="collection.html">
+                    <li class="hover:text-yellow-200">Collections</li>
+                </a>
+                <a href="contact.html">
+                    <li class="hover:text-yellow-200">Contact Us</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- mobile -->
+
+
+        <!-- section1 end -->
+
+        <!-- section-2 -->
+        <div class="slider ">
+
+            <div id="img1" class="slide relative">
+                <img src="./images/front-1.webp">
+                <!-- <div id="nxt_previous" class="relative flex justify-between bottom-44 md:-top-80 "> -->
+                <div id="nxt_previous"
+                    class="absolute left-0 right-0 top-12 -translate-y-1/2 flex justify-between md:top-1/2 ">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="#FFFFFF" width="100"
+                            height="100">
+                            <title>caret circle left</title>
+                            <path
+                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM149.66,93.66,115.31,128l34.35,34.34a8,8,0,0,1-11.32,11.32l-40-40a8,8,0,0,1,0-11.32l40-40a8,8,0,0,1,11.32,11.32Z" />
+                        </svg>
+                    </div>
+                    <div class="text-center text-white">
+                        <h1 class="font-extrabold text-2xl md:text-6xl pb-5">Level up your styles with us </h1>
+                        <p class="font-bold text-xl md:text-4xl pb-5">Winter is comming</p>
+                        <button class="bg-white text-black p-2">shop now</button>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="#FFFFFF" width="100"
+                            height="100">
+                            <title>caret circle right</title>
+                            <path
+                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm29.66-93.66a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32L140.69,128,106.34,93.66a8,8,0,0,1,11.32-11.32Z" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- <div class="flex absolute top-1/2 justify-between"> -->
+
+                <!-- <div class="absolute top-1/2 right-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="#FFFFFF" width="100"
+                        height="100">
+                        <title>caret circle right</title>
+                        <path
+                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm29.66-93.66a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32L140.69,128,106.34,93.66a8,8,0,0,1,11.32-11.32Z" />
+                    </svg>
+
+                </div>
+                <div class="absolute top-56 left-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="#FFFFFF" width="100"
+                        height="256">
+                        <title>caret circle left</title>
+                        <path
+                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM149.66,93.66,115.31,128l34.35,34.34a8,8,0,0,1-11.32,11.32l-40-40a8,8,0,0,1,0-11.32l40-40a8,8,0,0,1,11.32,11.32Z" />
+                    </svg>
+                </div> -->
+
+
+
+
+                <!-- <div class="text-center  absolute top-1/2">
+                        <h1>Level up your style with our</h1>
+                        <p>Summer collections</p>
+                        <button class="border border-b-2">Shop Now -></button>
+                    </div> -->
+                <!-- </div> -->
+
+            </div>
+            <!--images should be add  -->
+
+        </div>
+
+
+        <!-- Brand section -->
+        <div class="font-bold text-2xl m-5 pt-5">
+            <h2>Brands</h2>
+
+        </div>
+
+        <div class="m-5">
+
+            <div class="flex justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#242B2F" width="50" height="50">
+                    <title>Puma</title>
+                    <path
+                        d="M23.845 3.008c-.417-.533-1.146-.106-1.467.08-2.284 1.346-2.621 3.716-3.417 5.077-.626 1.09-1.652 1.89-2.58 1.952-.686.049-1.43-.084-2.168-.405-1.807-.781-2.78-1.792-3.017-1.97-.487-.37-4.23-4.015-7.28-4.164 0 0-.372-.75-.465-.763-.222-.025-.45.451-.616.501-.15.053-.413-.512-.565-.487-.153.02-.302.586-.6.877-.22.213-.486.2-.637.463-.052.096-.034.265-.093.42-.127.32-.551.354-.555.697 0 .381.357.454.669.72.248.212.265.362.554.461.258.088.632-.187.964-.088.277.081.543.14.602.423.054.256 0 .658-.34.613-.112-.015-.598-.174-1.198-.11-.725.077-1.553.309-1.634 1.11-.041.447.514.97 1.055.866.371-.071.196-.506.399-.716.267-.27 1.772.944 3.172.944.593 0 1.031-.15 1.467-.605.04-.029.093-.102.155-.11a.632.632 0 01.195.088c1.131.897 1.984 2.7 6.13 2.721.582.007 1.25.279 1.796.777.48.433.764 1.125 1.037 1.825.418 1.053 1.161 2.069 2.292 3.203.06.068.99.78 1.06.833.012.01.084.167.053.255-.02.69-.123 2.67 1.365 2.753.366.02.275-.231.275-.41-.005-.341-.065-.685.113-1.04.253-.478-.526-.709-.509-1.756.019-.784-.645-.651-.984-1.25-.19-.343-.368-.532-.35-.946.073-2.38-.517-3.948-.805-4.327-.227-.294-.423-.403-.207-.54 1.24-.815 1.525-1.574 1.525-1.574.66-1.541 1.256-2.945 2.075-3.57.166-.12.589-.44.852-.56.763-.362 1.173-.578 1.388-.788.356-.337.635-1.053.294-1.48z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" width="50" height="50">
+                    <title>Adidas</title>
+                    <path
+                        d="m24 19.535-8.697-15.07-4.659 2.687 7.145 12.383Zm-8.287 0L9.969 9.59 5.31 12.277l4.192 7.258ZM4.658 14.723l2.776 4.812H1.223L0 17.41Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" width="50" height="50">
+                    <title>Simplenote</title>
+                    <path
+                        d="M3.466 3.62c-.004.052-.014.104-.018.158-.406 4.626 2.747 8.548 8.03 9.994 2.024.553 5.374 2.018 5.06 5.599a5.063 5.063 0 0 1-1.803 3.46c-1.022.857-2.308 1.21-3.64 1.166C5.147 23.794 0 18.367 0 12.05c0-3.285 1.325-6.262 3.467-8.428zM9.82 1.032c.907-.762 2.056-1.078 3.235-1.027C18.996.27 24 5.67 24 11.936c0 2.855-1.001 5.478-2.667 7.536.332-4.908-2.94-8.897-8.59-10.441-2.337-.64-4.749-2.274-4.514-4.948A4.467 4.467 0 0 1 9.82 1.03z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="#101010" width="50" height="50">
+                    <title>leaf</title>
+                    <path
+                        d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49c.57,15.92,5.21,32,13.79,47.85l-19.51,19.5a8,8,0,0,0,11.32,11.32l19.5-19.51C81,210.73,97.09,215.37,113,215.94q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07ZM153.75,189.5c-22.75,13.78-49.68,14-76.71.77l88.63-88.62a8,8,0,0,0-11.32-11.32L65.73,179c-13.19-27-13-54,.77-76.71,22.09-36.47,74.6-56.44,141.31-54.06C210.2,114.89,190.22,167.41,153.75,189.5Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" width="50" height="50">
+                    <title>Behance</title>
+                    <path
+                        d="M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                    stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <title>brand twitch</title>
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M4 5v11a1 1 0 0 0 1 1h2v4l4 -4h5.584c.266 0 .52 -.105 .707 -.293l2.415 -2.414c.187 -.188 .293 -.442 .293 -.708v-8.585a1 1 0 0 0 -1 -1h-14a1 1 0 0 0 -1 1l.001 0" />
+                    <path d="M16 8l0 4" />
+                    <path d="M12 8l0 4" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" width="50" height="50">
+                    <title>Brandfetch</title>
+                    <path
+                        d="M23.226 5.842c0 1.491-.53 2.78-1.589 3.869-1.059 1.07-2.603 1.842-4.633 2.315 1.094.299 1.924.79 2.489 1.474.565.667.847 1.439.847 2.316 0 1.386-.441 2.588-1.324 3.605-.865 1.018-2.136 1.807-3.812 2.368-1.677.544-3.698.816-6.063.816-.883 0-1.589-.026-2.118-.079-.018.491-.23.86-.636 1.106-.406.245-.927.368-1.562.368s-1.077-.14-1.324-.421c-.23-.28-.326-.693-.291-1.237.159-2.456.468-5.026.927-7.71a75.521 75.521 0 0 1 1.747-7.816c.124-.439.37-.746.741-.921.371-.176.856-.263 1.457-.263 1.076 0 1.615.298 1.615.894 0 .246-.053.527-.16.842-.458 1.369-.917 3.228-1.376 5.58a65.729 65.729 0 0 0-.98 6.684c.848.07 1.536.105 2.066.105 2.47 0 4.28-.351 5.427-1.053 1.165-.72 1.747-1.631 1.747-2.737 0-.772-.335-1.42-1.006-1.947-.653-.526-1.756-.816-3.31-.868-.352-.018-.6-.106-.74-.264-.142-.157-.212-.412-.212-.763 0-.509.106-.92.317-1.237.212-.315.6-.482 1.165-.5 1.254-.035 2.383-.219 3.39-.552 1.023-.334 1.826-.798 2.409-1.395.582-.614.873-1.325.873-2.132 0-1.017-.503-1.815-1.509-2.394C16.792 3.298 15.248 3 13.165 3c-1.889 0-3.716.246-5.48.737-1.766.474-3.266 1.079-4.501 1.816-.565.333-1.042.5-1.43.5-.318 0-.565-.106-.742-.316-.158-.228-.238-.509-.238-.842 0-.439.088-.816.265-1.132.194-.316.644-.675 1.35-1.079 1.483-.842 3.221-1.5 5.216-1.973A26.377 26.377 0 0 1 13.721 0c3.195 0 5.577.535 7.148 1.605 1.571 1.07 2.357 2.483 2.357 4.237z" />
+                </svg>
+
+
+            </div>
+            <div class="flex justify-between">
+                <p>Puma</p>
+                <p>Puma</p>
+                <p>Puma</p>
+                <p>Puma</p>
+                <p>Puma</p>
+                <p>Puma</p>
+                <p>Puma</p>
+
+            </div>
+        </div>
+
+
+        <!-- Tag section -->
+
+
+        <div class="flex justify-between items-center m-5 pt-5">
+            <h1 class="font-bold text-3xl">We Provide Best
+                Customer Experiences</h1>
+            <p><span>||</span>We ensure that our customer have the best shopping experiences</p>
+
+        </div>
+
+        <!-- Delivery section -->
+
+        <div class="grid grid-cols-1 gap-5 m-5 md:grid-cols-4">
+            <div class="border border-r-2 p-5 bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <title>circle-check</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m16 9-5.5 5.5L8 12" />
+                </svg>
+                <p>Ordinal products</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+
+            <div class="border border-r-2 p-5 bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <title>face-slightly-smiling</title>
+                    <path d="M15 10V9" />
+                    <path d="M16.472 15a6 6 0 01-8.943 0" />
+                    <path d="M9 10V9" />
+                    <circle cx="12" cy="12" r="10" />
+                </svg>
+                <p>Satisfaction Guarantee</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+            </div>
+
+            <div class="border border-r-2 p-5 bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 -960 960 960" fill="#101010">
+                    <title>autorenew</title>
+                    <path
+                        d="M196-331q-20-36-28-72.5t-8-74.5q0-131 94.5-225.5T480-798h43l-80-80 39-39 149 149-149 149-40-40 79-79h-41q-107 0-183.5 76.5T220-478q0 29 5.5 55t13.5 49l-43 43ZM476-40 327-189l149-149 39 39-80 80h45q107 0 183.5-76.5T740-479q0-29-5-55t-15-49l43-43q20 36 28.5 72.5T800-479q0 131-94.5 225.5T480-159h-45l80 80-39 39Z" />
+                </svg>
+                <p>New Arrival Everyday</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="border border-r-2 p-5 bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 -960 960 960" fill="#101010">
+                    <title>delivery truck speed</title>
+                    <path
+                        d="M188-196q-32-36-27-85H61l13-60h112q15-18 36.5-28.5T270-380q26 0 47.5 10.5T354-341h198l92-399H186l3-13q5-21 21-34t37-13h472l-39 170h125l114 152-39 197h-80q5 49-27.5 85T690-160q-50 0-82-36t-27-85H380q5 49-27.5 85T270-160q-50 0-82-36Zm446-234h215l6-33-80-107H666l-32 140Zm1-273 9-37-92 399 8-36 34-146 41-180ZM22-437l15-60h220l-15 60H22Zm80-146 15-60h260l-15 60H102Zm168 363q21 0 35.5-15t14.5-35q0-21-14.5-35.5T270-320q-20 0-35 14.5T220-270q0 20 15 35t35 15Zm420 0q21 0 35.5-15t14.5-35q0-21-14.5-35.5T690-320q-20 0-35 14.5T640-270q0 20 15 35t35 15Z" />
+                </svg>
+                <p>Fast & Free Shipping</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <!-- New Arrivals section -->
+
+        <section id="NewArrival" class="px-5 py-10 ">
+            <h2 class="text-2xl font-bold mb-6">New Arrivals</h2>
+
+            <!-- Scrollable row -->
+            <div class="mw-scroll flex overflow-x-auto pb-4 p-7" style="gap:40px;">
+                <div id="newArrival_card" class="relative flex-none">
+                    <img id="card" class=" rounded" src="images/na_1.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+                <div id="newArrival_card" class="relative flex-none">
+                    <img id="card" class=" rounded" src="images/na_2.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+                <div id="newArrival_card" class="relative flex-none">
+                    <img id="card" class=" rounded" src="images/na_3.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+                <div id="newArrival_card" class="relative flex-none">
+                    <img id="card" class=" rounded" src="images/na_4.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+                <div id="newArrival_card" class="relative flex-none">
+                    <img id="card" class=" rounded" src="images/na_5.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+                <div id="newArrival_card" class="relative flex-none ">
+                    <img id="card" class=" rounded" src="images/na_6.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+                <div id="newArrival_card" class="relative flex-none">
+                    <img id="card" class=" rounded" src="images/na_7.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+                <div id="newArrival_card" class="relative flex-none">
+                    <img id="card" class=" rounded" src="images/na_8.png" alt="">
+
+                    <button class="border border-black bg-white p-2 absolute right-14 top-32">Shop Now</button>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- Most wanted section  -->
+
+        <section id="most-wanted" class="px-5 py-10 ">
+            <h2 class="text-2xl font-bold mb-6">Most Wanted</h2>
+
+            <!-- Scrollable row -->
+            <div class="mw-scroll flex overflow-x-auto pb-4 p-7" style="gap:40px;">
+
+                <!-- Card 1 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_1.png" alt="Product 1">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_2.png" alt="Product 2">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_3.png" alt="Product 3">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_4.png" alt="Product 4">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_5.png" alt="Product 5">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_6.png" alt="Product 6">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_7.png" alt="Product 7">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="mw-card relative flex-none">
+                    <span class="absolute top-0 left-0 bg-red-600 text-white text-xl px-3 py-1 z-10">sale</span>
+                    <img src="images/fashion_8.png" alt="Product 8">
+                    <svg class="absolute bottom-3 right-3 w-8 h-8 p-1 bg-white rounded-full text-gray-900" fill="none"
+                        stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.3 6.3a5 5 0 017.1 0L12 7l.6-.7a5 5 0 117.1 7.1L12 21l-7.7-7.6a5 5 0 010-7.1z" />
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- credit scene -->
+
+        <div class="grid  grid-cols-1 md:grid-cols-2" style="background-color:#EAAA00;">
+
+            <div class="p-5">
+                <img src="./images/Untitled design.png" alt="" style="width: 600px;">
+            </div>
+
+            <div class="flex flex-col justify-center p-5">
+
+                <h1 class="text-6xl font-bold">Limited Offer</h1>
+                <h2 class="text-4xl pt-4 pb-4">
+                    35% off for first purchase
+                </h2>
+
+                <button class="border border-black bg-white rounded" style="width: 15%;">Shop Now</button>
+            </div>
+        </div>
+
+        <!-- news letter -->
+        <div class="text-center m-10">
+            <h1 class="font-bold text-3xl">
+                Join our News letter
+            </h1>
+
+            <p class="text-2xl pb-2">Singup for our email newsletter to get exclusive discounts, updates and more</p>
+            <input type="text" placeholder="Type here" class="border border-black p-2" style="width: 80%;"><br>
+            <button class="border border-black bg-black text-white rounded mt-2 p-2"><u>Subscibe</u></button>
+        </div>
+
+        <!-- footer -->
+        <div class="bg-black text-white p-5 mt-5">
+            <h1 class="font-bold text-4xl pb-3">
+                Dhakshaa's collection
+            </h1>
+            <p class="text-2xl">The standard of the cloths and accoseries be very quality and beautiful try it out below
+                every products under rs. 600</p>
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

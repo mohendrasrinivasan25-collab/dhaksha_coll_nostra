@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="" style="background-color: silver;">
+    <div>
+
+        <div>
+            <p class="text-center p-3 bg-black text-white">Sign Up and <b>Get 20% OFF</b> for your first Order</p>
+
+        </div>
+
+        <!-- section 1 -->
+
+        <div class="flex justify-between p-5 site-header">
+            <h1 class="font-bold text-2xl">Dhakshaa's Collection</h1>
+            <ul class="gap-10 hidden md:flex">
+                <a href="index.html"><li class="hover:text-yellow-200">Home</li></a>
+                <a href="index.html#NewArrival"><li class="hover:text-yellow-200">New Arrival</li></a>
+                <a href="index.html#most-wanted"><li class="hover:text-yellow-200">Most Wanted</li></a>
+                <a href="collection.html"><li class="hover:text-yellow-200">Collections</li></a>
+                <a href="contact.html"><li class="hover:text-yellow-200">Contact Us</li></a>
+            </ul>
+            <svg id="menubox" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-6 cursor-pointer md:hidden" role="button" tabindex="0"
+                aria-label="Open navigation menu" aria-expanded="false">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+
+        <div id="sideebar" class="bg-gray-200 fixed z-20 top-0 transition-all duration-500"
+            style="width: 50%; height: 100vh; left: -50%;">
+            <div class="text-right p-5">
+                <p id="closebar" class="inline cursor-pointer" role="button" tabindex="0"
+                    aria-label="Close navigation menu">X</p>
+            </div>
+            <ul class="flex flex-col gap-10 items-center text-gray-600">
+                <a href="index.html"><li class="hover:text-yellow-200">Home</li></a>
+                <a href="index.html#NewArrival"><li class="hover:text-yellow-200">New Arrival</li></a>
+                <a href="index.html#most-wanted"><li class="hover:text-yellow-200">Most Wanted</li></a>
+                <a href="collection.html"><li class="hover:text-yellow-200">Collections</li></a>
+                <a href="contact.html"><li class="hover:text-yellow-200">Contact Us</li></a>
+            </ul>
+        </div>
+
+    </div>
+    <div class="grid grid-cols-4">
+        <div id="side_1" class="col-span-1 p-5">
+            <div class="pb-5 p-2">
+                <h1 class="pb-3 text-2xl">Occasion</h1>
+                <input type="checkbox" name="check" class="sweater">Sweater
+                <br>
+                <input type="checkbox" name="check" class="party">Party Wear
+                <br>
+                <input type="checkbox" name="check" class="homewear">Home Wear
+            </div>
+            <div class="pb-5 p-2">
+                <h1 class="pb-3 text-2xl">Colors</h1>
+                <input type="checkbox" name="check" class="bright">Bright
+                <br>
+                <input type="checkbox" name="check" class="dark">Dark
+                <br>
+                <input type="checkbox" name="check" class="beige">Beige
+                <br>
+                <input type="checkbox" name="check" class="brown">Brown
+
+            </div>
+
+        </div>
+
+
+        <div id="side_2" class="col-span-3 p-5 border-l-2 border-black">
+            <input type="text" placeholder="Search for a product" class="border border-black p-2 rounded mt-3"
+                style="width: 95%;" id="search">
+
+            <div id="product_container" class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5">
+                <div class="sweater dark">
+                    <img src="./images/fashion_1.png" alt="">
+                    <h2 class="font-bold text-2xl">Brown Sweater</h2>
+                    <p>₹ 299</p>
+                </div>
+                <div class="dark">
+                    <img src="./images/fashion_2.png" alt="">
+                    <h2 class="font-bold text-2xl">Black T-shirt</h2>
+                    <p>₹ 299</p>
+                </div>
+                <div class="party dark">
+                    <img src="./images/fashion_3.png" alt="">
+                    <h2 class="font-bold text-2xl">Black fancy top</h2>
+                    <p>₹ 399</p>
+                </div>
+                <div class="sweater dark">
+                    <img src="./images/fashion_4.png" alt="">
+                    <h2 class="font-bold text-2xl">Greeny Sweater</h2>
+                    <p>₹ 499</p>
+                </div>
+                <div class="sweater bright">
+                    <img src="./images/fashion_5.png" alt="">
+                    <h2 class="font-bold text-2xl">Grey Jacket</h2>
+                    <p>₹ 349</p>
+                </div>
+                <div class="bright">
+                    <img src="./images/fashion_6.png" alt="">
+                    <h2 class="font-bold text-2xl">M-fit Jean</h2>
+                    <p>₹ 451</p>
+                </div>
+                <div class="bright">
+                    <img src="./images/fashion_7.png" alt="">
+                    <h2 class="font-bold text-2xl">Jean pair</h2>
+                    <p>₹ 499</p>
+                </div>
+                <div class="party bright">
+                    <img src="./images/fashion_8.png" alt="">
+                    <h2 class="font-bold text-2xl">White pearl</h2>
+                    <p>₹ 449</p>
+                </div class="party beige">
+                <div>
+                    <img src="./images/na_1.png" alt="">
+                    <h2 class="font-bold text-2xl">Beige Casual</h2>
+                    <p>₹ 399</p>
+                </div>
+
+                <div class="beige">
+                    <img src="./images/na_2.png" alt="">
+                    <h2 class="font-bold text-2xl">Brown Casual Set</h2>
+                    <p>₹ 549</p>
+                </div>
+                <div class="sweater brown">
+                    <img src="./images/na_3.png" alt="">
+                    <h2 class="font-bold text-2xl">Brooklyn Jacket</h2>
+                    <p>₹ 399</p>
+                </div>
+                <div class="bright">
+                    <img src="./images/na_4.png" alt="">
+                    <h2 class="font-bold text-2xl">W+B Casual</h2>
+                    <p>₹ 449</p>
+                </div>
+                <div class="homewear bright">
+                    <img src="./images/na_5.png" alt="">
+                    <h2 class="font-bold text-2xl">Beige Night wear</h2>
+                    <p>₹ 399</p>
+                </div>
+                <div class="homewear brown">
+                    <img src="./images/na_6.png" alt="">
+                    <h2 class="font-bold text-2xl">Brown party wear</h2>
+                    <p>₹ 349</p>
+                </div>
+                <div class="beige">
+                    <img src="./images/na_7.png" alt="">
+                    <h2 class="font-bold text-2xl">Momfit + Sneaker</h2>
+                    <p>₹ 400</p>
+                </div>
+                <div class="homewear beige">
+                    <img src="./images/na_8.png" alt="">
+                    <h2 class="font-bold text-2xl">Home wear</h2>
+                    <p>₹ 299</p>
+                </div>  
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="text-center m-10">
+        <h1 class="font-bold text-3xl">
+            Join our News letter
+        </h1>
+
+        <p class="text-2xl pb-2">Singup for our email newsletter to get exclusive discounts, updates and more</p>
+        <input type="text" placeholder="Type here" class="border border-black p-2" style="width: 80%;"><br>
+        <button class="border border-black bg-black text-white rounded mt-2 p-2"><u>Subscibe</u></button>
+    </div>
+
+
+    <div class="bg-black text-white p-5">
+        <h1 class="font-bold text-4xl pb-3">
+            Dhakshaa's collection
+        </h1>
+        <p class="text-2xl">The standard of the cloths and accoseries be very quality and beautiful try it out below every products under rs. 600</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
